@@ -40,6 +40,8 @@ server/                 Express API
 
 ## Setup
 
+For Windows users, the easiest option is to double-click [`run.bat`](run.bat). It installs dependencies on first use, creates the local API environment file, starts the API and frontend, and opens the app. See [SETUP.md](SETUP.md) for prerequisites and troubleshooting.
+
 1. Configure the API environment:
 
    ```powershell
