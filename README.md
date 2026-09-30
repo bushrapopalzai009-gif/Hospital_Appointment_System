@@ -1,5 +1,7 @@
 # Carepoint Hospital Appointment System
 
+> Last updated: 2026-09-30
+
 A full-stack appointment platform built with MongoDB, Express, React, and Node.js. It includes patient and doctor authentication, public doctor discovery, scheduling, appointment management, notifications, and role-aware dashboards.
 
 ## Features
