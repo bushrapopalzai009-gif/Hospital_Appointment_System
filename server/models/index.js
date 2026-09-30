@@ -16,7 +16,7 @@ const patientSchema = new mongoose.Schema({ userId: { type: mongoose.Schema.Type
 const appointmentSchema = new mongoose.Schema({
   patientId: { type: mongoose.Schema.Types.ObjectId, ref: 'User', required: true }, doctorId: { type: mongoose.Schema.Types.ObjectId, ref: 'Doctor', required: true },
   date: { type: Date, required: true }, time: { type: String, required: true }, reason: { type: String, required: true }, notes: String,
-  slotKey: { type: String, unique: true, sparse: true },
+  slotKey: { type: String, unique: true, sparse: true }, patientSlotKey: { type: String, unique: true, sparse: true },
   status: { type: String, enum: ['Pending','Confirmed','Completed','Cancelled','Rescheduled','No-Show'], default: 'Pending' }, appointmentType: { type: String, default: 'In person' }
 }, { timestamps: true });
 const departmentSchema = new mongoose.Schema({ name: { type: String, unique: true, required: true }, description: String, icon: String }, { timestamps: true });
